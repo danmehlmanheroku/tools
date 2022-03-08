@@ -9,7 +9,7 @@ apps = []
 
 #Put the target teams as elemts in this array i.e
 # ["team1"] for one team or ["team1", team2"] for two
-teams_to_clean = ["put a team name here"]
+teams_to_clean = ["Personal", "dannyland", "bernie-sits"]
 
 for team in teams_to_clean do
   apps.push(*`heroku apps --team #{team}`.split(/\n+/).drop(1))
